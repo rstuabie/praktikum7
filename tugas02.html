@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<title>Tugas 2</title>
+<head>
+    <script>
+        function hitung() {
+            const dollar = 15000; //dollar
+            let rupiah = document.getElementById("rupiah").value;
+            console.log("Rupiah : Rp." + rupiah);
+            let hasil_dollar = rupiah / dollar;
+            console.log("Dollar : $ " + hasil_dollar);
+            let area_hasil = document.getElementById("hasil");
+            area_hasil.innerHTML = "dollar : " + hasil_dollar;
+        }
+    </script>
+</head>
+
+<body>
+    <h3>Menghitung Nilai Kurs Rupiah</h3>
+    Masukan Nilai Rupiah:
+    <input type="number" value="" size="10" id="rupiah" />
+    <br />
+    <button onclick="hitung()">Hitung</button>
+    <br />Hasil : <span id="hasil"></span>
+</body>
+</html> 
